@@ -1,0 +1,4 @@
+# Dados congelados: o Git não deve converter quebras de linha (CRLF/LF),
+# senão o SHA-256 de um clone deixa de bater com data/MANIFEST.txt.
+data/raw/** binary
+data/MANIFEST.txt -text

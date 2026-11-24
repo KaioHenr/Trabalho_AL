@@ -28,10 +28,10 @@ Estimar matrizes de transição dos níveis de alerta semanais do InfoDengue (20
 ```bash
 pip install -r requirements.txt
 pytest                 # testes (Tabela 1 do enunciado e propriedades)
-python run_all.py      # regenera todos os resultados a partir de data/raw/, sem internet (em construção)
+python run_all.py      # regenera todos os resultados a partir de data/raw/, sem internet
 ```
 
-Tempo aproximado de execução de `run_all.py`: *a medir.*
+Tempo aproximado de execução de `run_all.py`: cerca de 11 s com as Etapas 1 e 2.
 
 ## Organização
 
@@ -49,7 +49,15 @@ relatorio/       fonte e PDF do relatório
 
 | Item do relatório | Arquivo gerado | Script |
 |---|---|---|
-| *a preencher conforme as etapas forem concluídas* | | |
+| Auditoria dos 78 municípios (E1) | `results/e1_auditoria.csv` | `src/etapa1.py` |
+| Verificações e hashes (E1) | `results/tabelas/e1_verificacoes.csv`, `e1_hashes.csv` | `src/etapa1.py` |
+| Semanas sorteadas para o Canal 2 (E1) | `results/tabelas/e1_canal2_sorteio.csv` | `src/etapa1.py` |
+| Casos anuais de Serra para o Canal 3 (E1) | `results/tabelas/e1_serra_casos_anuais.csv` | `src/etapa1.py` |
+| Níveis de Serra no tempo (E1) | `results/figuras/e1_niveis_serra.png` | `src/etapa1.py` |
+| Mapa de calor município × ano (E1) | `results/figuras/e1_mapa_calor_nivel3mais.png` | `src/etapa1.py` |
+| Matrizes C, P̂, erros-padrão e Laplace (E2) | `results/tabelas/e2_C_*.csv`, `e2_P_*.csv`, `e2_EP_*.csv`, `e2_P_laplace_*.csv` | `src/etapa2.py` |
+| π e efeito de Laplace (E2) | `results/tabelas/e2_pi_laplace.csv` | `src/etapa2.py` |
+| Mapas de calor de P̂ (E2) | `results/figuras/e2_mapas_P.png` | `src/etapa2.py` |
 
 ## Uso de IA
 

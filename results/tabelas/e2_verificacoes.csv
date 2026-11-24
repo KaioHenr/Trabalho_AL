@@ -1,0 +1,13 @@
+serie,verificacao,valor,ok
+serra,P̂ >= 0 e P̂·1 = 1 (tol 1e-12),,True
+serra,P̂ Laplace >= 0 e linhas somam 1 (tol 1e-12),,True
+serra,soma de C = transições válidas da Etapa 1,573 = 573,True
+serra,C por laço = C por crosstab (segundo caminho),max |dif| = 0,True
+vila_velha,P̂ >= 0 e P̂·1 = 1 (tol 1e-12),,True
+vila_velha,P̂ Laplace >= 0 e linhas somam 1 (tol 1e-12),,True
+vila_velha,soma de C = transições válidas da Etapa 1,573 = 573,True
+vila_velha,C por laço = C por crosstab (segundo caminho),max |dif| = 0,True
+es,P̂ >= 0 e P̂·1 = 1 (tol 1e-12),,True
+es,P̂ Laplace >= 0 e linhas somam 1 (tol 1e-12),,True
+es,soma de C = transições válidas da Etapa 1,44694 = 44694,True
+es,C por laço = C por crosstab (segundo caminho),max |dif| = 0,True

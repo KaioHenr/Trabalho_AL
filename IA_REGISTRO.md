@@ -77,3 +77,28 @@ Em cada entrada, **Pedido** resume a solicitação em linguagem formal, e **Prom
 **Aceito / modificado / rejeitado:** *a preencher pelo aluno após revisão.*
 
 **Como foi verificado:** modo de teste com Serra (574 linhas, SE 201501 a 202553, colunas `data_iniSE`, `SE`, `nivel` e `versao_modelo` presentes); `pytest` passando.
+
+---
+
+## 4. Etapas 1 e 2 (24/11/2026)
+
+| Campo | Registro |
+|---|---|
+| **Finalidade** | Código e preparação de notas para o relatório |
+| **Etapa** | Etapa 1 (auditoria dos dados) e Etapa 2 (estimação de P̂) |
+
+**Pedido:** implementar completamente a Etapa 1 e a Etapa 2, a partir do esqueleto de funções de `src/etapa1.py` escrito pelo aluno, para permitir o commit do dia.
+
+**Prompt original:**
+> faça a etapa 1 e a etapa 2 para fazer o commit e o push hj pfvr
+
+**O que foi produzido:**
+- `src/etapa1.py`: o aluno definiu a estrutura de funções (`ler_serie`, `auditar`, `conferir_hashes`, `auditar_todos`, `sortear_semanas_conferencia`, `grafico_niveis_serra`, `mapa_calor_municipio_ano`, `main`). A IA implementou essas funções e acrescentou `remover_duplicatas`, `transicoes`, `contar_transicoes_por_blocos`, `verificar_auditoria`, `resumir_conferencia_canal2` e `casos_anuais_serra`.
+- `src/etapa2.py`: matriz de contagens (laço e `crosstab`), P̂ por máxima verossimilhança, erros-padrão, Laplace (α = 0,5), π e ‖π − π^(α)‖₁, mapas de calor.
+- `run_all.py`: executa as etapas em sequência.
+- `tests/test_etapas_1_2.py`: 5 testes com séries artificiais (lacuna, nível ausente, duplicata, contagens por dois caminhos, estimadores estocásticos).
+- `relatorio/notas/etapa1.md` e `etapa2.md`: resumo dos números e pontos de interpretação.
+
+**Aceito / modificado / rejeitado:** *a preencher pelo aluno após revisão.*
+
+**Como foi verificado:** `python run_all.py` sem erros (≈ 11 s); verificações salvas em `results/tabelas/e1_verificacoes.csv` e `e2_verificacoes.csv`, todas ok; hashes conferem com o manifesto; `pytest` com 28 testes passando.

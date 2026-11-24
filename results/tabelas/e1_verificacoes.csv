@@ -1,0 +1,4 @@
+verificacao,ok
+soma das semanas por nível = semanas observadas com nível,True
+transições: contagem direta = contagem por blocos (nenhuma atravessa lacuna),True
+só níveis 1 a 4 nos dados,True

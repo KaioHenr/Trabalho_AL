@@ -1,0 +1,4 @@
+serie,modulo_lambda2,meia_vida_semanas,lambda2_complexo,norma1_P52quad_menos_P52diag,norma1_P52quad_menos_P52rep,kappa1_V,dist_e1_n52,dist_e4_n52
+serra,0.879408,5.39386,True,6.63358e-15,2.88658e-15,6.07686,0.00214403,0.00277159
+vila_velha,0.881074,5.47452,False,6.30052e-15,2.77556e-15,4.49563,0.00120602,0.00220248
+es,0.885841,5.71822,False,1.32006e-13,1.11022e-15,6.39597,0.000634275,0.0030985

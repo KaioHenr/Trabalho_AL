@@ -1,0 +1,13 @@
+serie,verificacao,valor,ok
+serra,soma dos autovalores = traço (tol 1e-10),8.88e-16,True
+serra,produto dos autovalores = determinante (tol 1e-10),3.33e-16,True
+serra,P̂^52: quadrados sucessivos = diagonalização (||dif||_1 < 1e-10),6.63e-15,True
+serra,lambda_1 = 1,0.00e+00,True
+vila_velha,soma dos autovalores = traço (tol 1e-10),0.00e+00,True
+vila_velha,produto dos autovalores = determinante (tol 1e-10),1.11e-16,True
+vila_velha,P̂^52: quadrados sucessivos = diagonalização (||dif||_1 < 1e-10),6.30e-15,True
+vila_velha,lambda_1 = 1,1.11e-16,True
+es,soma dos autovalores = traço (tol 1e-10),4.44e-16,True
+es,produto dos autovalores = determinante (tol 1e-10),1.11e-16,True
+es,P̂^52: quadrados sucessivos = diagonalização (||dif||_1 < 1e-10),1.32e-13,True
+es,lambda_1 = 1,8.88e-16,True

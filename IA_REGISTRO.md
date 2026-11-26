@@ -102,3 +102,30 @@ Em cada entrada, **Pedido** resume a solicitação em linguagem formal, e **Prom
 **Aceito / modificado / rejeitado:** *a preencher pelo aluno após revisão.*
 
 **Como foi verificado:** `python run_all.py` sem erros (≈ 11 s); verificações salvas em `results/tabelas/e1_verificacoes.csv` e `e2_verificacoes.csv`, todas ok; hashes conferem com o manifesto; `pytest` com 28 testes passando.
+
+---
+
+## 5. Etapas 3 e 4 (25/11/2026)
+
+| Campo | Registro |
+|---|---|
+| **Finalidade** | Código, execução e preparação de notas para o relatório |
+| **Etapa** | Etapa 3 (distribuição estacionária) e Etapa 4 (espectro e convergência) |
+
+**Pedido:** implementar as Etapas 3 e 4, executar os scripts e deixar o trabalho commitado no repositório local, para revisão do aluno antes do push.
+
+**Prompt original:**
+> faça a etapa 3 e 4 pfvr e já roda os scripts e deixa commitado apenas para eu fazer avaliar e fazer o push no final
+
+**O que foi produzido:**
+- `src/etapa3.py`: π por sistema linear, método das potências (de e1, e4 e uniforme) e autovetor à esquerda; discrepância, resíduo, menor k contra Wielandt, π contra a frequência empírica.
+- `src/etapa4.py`: espectro, |λ₂|, meia-vida, P̂⁵² por quadrados sucessivos, diagonalização e multiplicação repetida, κ₁(V), gráfico de convergência em escala log.
+- `src/markov.py`: nova função `convergence_curve`.
+- `src/etapa2.py`: nova função `estimar_tres_P` (P̂ sem arredondamento para as etapas seguintes).
+- `tests/test_etapas_3_4.py`: 5 testes (Tabela 1, concordância, iterações e |λ₂|, frequência empírica, curva de convergência).
+- `relatorio/notas/etapa3.md` e `etapa4.md`.
+- Dois commits locais (`feat(etapa3)` e `feat(etapa4)`), feitos pela IA a pedido do aluno; o push fica a cargo do aluno após revisão.
+
+**Aceito / modificado / rejeitado:** *a preencher pelo aluno após revisão.*
+
+**Como foi verificado:** `python run_all.py` sem erros (≈ 12 s); `e3_verificacoes.csv` e `e4_verificacoes.csv` com 12 de 12 ok cada; `pytest` com 33 testes passando; resultados das Etapas 1 e 2 idênticos aos da execução anterior.

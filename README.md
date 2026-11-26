@@ -31,7 +31,7 @@ pytest                 # testes (Tabela 1 do enunciado e propriedades)
 python run_all.py      # regenera todos os resultados a partir de data/raw/, sem internet
 ```
 
-Tempo aproximado de execução de `run_all.py`: cerca de 11 s com as Etapas 1 e 2.
+Tempo aproximado de execução de `run_all.py`: cerca de 12 s com as Etapas 1 a 4.
 
 ## Organização
 
@@ -58,6 +58,11 @@ relatorio/       fonte e PDF do relatório
 | Matrizes C, P̂, erros-padrão e Laplace (E2) | `results/tabelas/e2_C_*.csv`, `e2_P_*.csv`, `e2_EP_*.csv`, `e2_P_laplace_*.csv` | `src/etapa2.py` |
 | π e efeito de Laplace (E2) | `results/tabelas/e2_pi_laplace.csv` | `src/etapa2.py` |
 | Mapas de calor de P̂ (E2) | `results/figuras/e2_mapas_P.png` | `src/etapa2.py` |
+| π por três métodos e iterações (E3) | `results/tabelas/e3_pi_metodos.csv`, `e3_resumo.csv` | `src/etapa3.py` |
+| π contra frequência empírica (E3) | `results/tabelas/e3_pi_vs_empirico.csv` | `src/etapa3.py` |
+| Espectro, meia-vida, κ₁(V) (E4) | `results/tabelas/e4_espectro.csv`, `e4_resumo.csv` | `src/etapa4.py` |
+| P̂⁵² (E4) | `results/tabelas/e4_P52_*.csv` | `src/etapa4.py` |
+| Convergência para π, escala log (E4) | `results/figuras/e4_convergencia.png`, `results/tabelas/e4_convergencia_*.csv` | `src/etapa4.py` |
 
 ## Uso de IA
 

@@ -72,6 +72,18 @@ def matrizes_das_tres_series():
     }, series
 
 
+TITULOS = {"serra": "Serra", "vila_velha": "Vila Velha", "es": "ES agregado"}
+
+
+def estimar_tres_P():
+    """P̂ em precisão total (não arredondada) para as três séries, para uso nas etapas seguintes.
+
+    Devolve (dicionário nome -> P̂, dicionário geocode -> série).
+    """
+    Cs, series = matrizes_das_tres_series()
+    return {nome: estimar_P(C) for nome, C in Cs.items()}, series
+
+
 def salvar_matriz(M, nome, casas=6):
     pd.DataFrame(np.round(M, casas), index=ROTULOS, columns=ROTULOS).to_csv(PASTA_TABELAS / nome)
 
@@ -79,7 +91,7 @@ def salvar_matriz(M, nome, casas=6):
 def mapa_calor(Ps, caminho):
     """Mapas de calor de P̂ (escala de cinza, valores escritos nas células)."""
     fig, eixos = plt.subplots(1, 3, figsize=(13, 5))
-    titulos = {"serra": "Serra", "vila_velha": "Vila Velha", "es": "ES agregado"}
+    titulos = TITULOS
     for ax, (nome, P) in zip(eixos, Ps.items()):
         ax.imshow(P, cmap="Greys", vmin=0, vmax=1)
         for i in range(4):

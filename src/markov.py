@@ -234,3 +234,21 @@ def neumann_partial(Q, K):
         soma = soma + termo
     return soma
 # [/IA]
+
+
+# [IA] Claude Code (claude-opus-5-5) – 2026-11-25 – curva de convergência para pi
+def convergence_curve(P, pi0, pi, n_max):
+    """Distâncias d(n) = ||pi0 P^n - pi||_1 para n = 0, 1, ..., n_max.
+
+    A distribuição é atualizada passo a passo (pi^(n+1) = pi^(n) P), em laço explícito.
+    Se P é diagonalizável, d(n) decai como C |lambda_2|^n.
+    """
+    P = np.asarray(P, dtype=float)
+    dist = np.asarray(pi0, dtype=float)
+    pi = np.asarray(pi, dtype=float)
+    d = np.empty(n_max + 1)
+    for n in range(n_max + 1):
+        d[n] = np.sum(np.abs(dist - pi))
+        dist = dist @ P
+    return d
+# [/IA]

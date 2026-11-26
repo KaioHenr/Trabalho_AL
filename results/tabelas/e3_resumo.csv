@@ -1,0 +1,4 @@
+serie,maior_discrepancia_L1_entre_metodos,residuo_L1_piP_menos_pi,modulo_lambda2,iteracoes_e1,iteracoes_e4,iteracoes_uniforme,iteracoes_previstas_ln(tol)/ln|lambda2|,menor_k_Pk_positiva,limite_wielandt
+serra,1.33813e-11,2.77556e-17,0.879408,204,205,201,215.016,2,10
+vila_velha,1.34305e-11,5.55112e-17,0.881074,202,207,195,218.232,2,10
+es,1.47125e-11,0,0.885841,203,216,209,227.946,2,10

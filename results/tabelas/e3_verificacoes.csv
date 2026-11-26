@@ -1,0 +1,13 @@
+serie,verificacao,valor,ok
+serra,três métodos concordam (L1 < 1e-10),1.34e-11,True
+serra,resíduo ||pi P̂ - pi||_1 (registrado; < 1e-12),2.78e-17,True
+serra,P̂ primitiva (P̂^k > 0 para algum k <= Wielandt),2,True
+serra,pi >= 0 e soma 1,1.000000000000000,True
+vila_velha,três métodos concordam (L1 < 1e-10),1.34e-11,True
+vila_velha,resíduo ||pi P̂ - pi||_1 (registrado; < 1e-12),5.55e-17,True
+vila_velha,P̂ primitiva (P̂^k > 0 para algum k <= Wielandt),2,True
+vila_velha,pi >= 0 e soma 1,1.000000000000000,True
+es,três métodos concordam (L1 < 1e-10),1.47e-11,True
+es,resíduo ||pi P̂ - pi||_1 (registrado; < 1e-12),0.00e+00,True
+es,P̂ primitiva (P̂^k > 0 para algum k <= Wielandt),2,True
+es,pi >= 0 e soma 1,1.000000000000000,True

@@ -1,0 +1,4 @@
+serie,B_de_2_para_4_modelo,n_episodios,n_terminados_em_4,proporcao_empirica,ic95_inf,ic95_sup,modelo_dentro_do_ic,n_censurados
+serra,0.360656,12,4,0.333333,0.099246,0.651124,True,1
+vila_velha,0.385965,15,7,0.466667,0.212667,0.734139,True,1
+es,0.292718,783,208,0.265645,0.235001,0.298065,True,12

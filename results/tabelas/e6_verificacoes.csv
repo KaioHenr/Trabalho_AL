@@ -1,0 +1,19 @@
+serie,verificacao,valor,ok
+serra,B·1 = 1 (tol 1e-12),2.22e-16,True
+serra,"t = N·1 igual a solve((I-Q), 1) (tol 1e-10)",7.11e-15,True
+serra,"N inversa = soma de Neumann K=5000, nível 4 absorvente (tol 1e-10)",1.49e-13,True
+serra,"N inversa = soma de Neumann K=5000, 1 e 4 absorventes (tol 1e-10)",8.88e-15,True
+serra,variâncias >= 0,2070,True
+serra,t saindo de 1 (4 absorvente) = m_14 da Etapa 5 (tol 1e-10),7.11e-15,True
+vila_velha,B·1 = 1 (tol 1e-12),1.11e-16,True
+vila_velha,"t = N·1 igual a solve((I-Q), 1) (tol 1e-10)",7.11e-15,True
+vila_velha,"N inversa = soma de Neumann K=5000, nível 4 absorvente (tol 1e-10)",3.20e-14,True
+vila_velha,"N inversa = soma de Neumann K=5000, 1 e 4 absorventes (tol 1e-10)",3.55e-15,True
+vila_velha,variâncias >= 0,1555,True
+vila_velha,t saindo de 1 (4 absorvente) = m_14 da Etapa 5 (tol 1e-10),0.00e+00,True
+es,B·1 = 1 (tol 1e-12),2.22e-16,True
+es,"t = N·1 igual a solve((I-Q), 1) (tol 1e-10)",2.84e-14,True
+es,"N inversa = soma de Neumann K=5000, nível 4 absorvente (tol 1e-10)",1.99e-13,True
+es,"N inversa = soma de Neumann K=5000, 1 e 4 absorventes (tol 1e-10)",3.55e-15,True
+es,variâncias >= 0,3880,True
+es,t saindo de 1 (4 absorvente) = m_14 da Etapa 5 (tol 1e-10),2.84e-14,True

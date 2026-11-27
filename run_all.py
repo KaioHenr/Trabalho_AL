@@ -7,9 +7,9 @@ Não acessa a internet. Uso:  python run_all.py
 import sys
 import time
 
-from src import etapa1, etapa2, etapa3, etapa4, etapa5
+from src import etapa1, etapa2, etapa3, etapa4, etapa5, etapa6, etapa7
 
-ETAPAS = [etapa1, etapa2, etapa3, etapa4, etapa5]   # as próximas etapas entram aqui, na ordem
+ETAPAS = [etapa1, etapa2, etapa3, etapa4, etapa5, etapa6, etapa7]   # as próximas etapas entram aqui, na ordem
 
 if __name__ == "__main__":
     # [IA] Claude Code (claude-opus-5-5) – 2026-11-26 – evita erro de codificação em terminais do Windows

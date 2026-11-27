@@ -154,3 +154,28 @@ Em cada entrada, **Pedido** resume a solicitação em linguagem formal, e **Prom
 **Aceito / modificado / rejeitado:** *a preencher pelo aluno após revisão.*
 
 **Como foi verificado:** no clone limpo, os hashes conferem, os testes passam e os resultados regenerados são idênticos aos do repositório (nenhum arquivo de `results/` alterado); `e5_verificacoes.csv` com 6 de 6 ok; `pytest` com 38 testes passando.
+
+---
+
+## 7. Etapas 6 e 7 (27/11/2026)
+
+| Campo | Registro |
+|---|---|
+| **Finalidade** | Código e preparação de notas para o relatório |
+| **Etapa** | Etapa 6 (cadeia absorvente) e Etapa 7 (previsão fora da amostra) |
+
+**Pedido:** implementar as Etapas 6 e 7. O aluno havia criado os arquivos `src/etapa6.py` e `src/etapa7.py`, ainda vazios.
+
+**Prompt original:**
+> Corrige para mim a etapa 6 e 7 pfvr
+
+**O que foi produzido:**
+- `src/etapa6.py`: N, t, variância e desvio-padrão com o nível 4 absorvente; B = NR com 1 e 4 absorventes; episódios empíricos 1→2→(1 ou 4) com IC binomial exato de 95% (`scipy.stats.binomtest`); erro da série de Neumann contra K; figura em escala log.
+- `src/etapa7.py`: P̂ de treino (2015–2022), previsões e_{X_t} P̂ʰ para h = 1, 4, 8 em 2023–2025, pontuações de Brier e logarítmica, referências de persistência e climatologia, figura de 2024.
+- `tests/test_etapas_6_7.py`: 7 testes (episódios, B da Tabela 1, Neumann, separação treino/teste, pares de teste, pontuações em casos simples, e₁P⁴ da Tabela 1).
+- `run_all.py` com as Etapas 6 e 7; `relatorio/notas/etapa6.md` e `etapa7.md`.
+- Dois commits locais, feitos pela IA, seguindo o padrão dos anteriores.
+
+**Aceito / modificado / rejeitado:** *a preencher pelo aluno após revisão.*
+
+**Como foi verificado:** `e6_verificacoes.csv` com 18 de 18 ok e `e7_verificacoes.csv` com 26 de 26 ok; `python run_all.py` sem erros (≈ 14 s); `pytest` com 45 testes passando.

@@ -1,0 +1,27 @@
+serie,verificacao,valor,ok
+serra,nenhuma transição de treino toca 2023 ou depois,última semana usada: 2022-12-25,True
+serra,"previsões somam 1 (markov, h=1)",1.11e-16,True
+serra,"previsões somam 1 (persistencia, h=1)",0.00e+00,True
+serra,"previsões somam 1 (climatologia, h=1)",0.00e+00,True
+serra,P_treino^1: quadrados sucessivos = diagonalização,7.77e-16,True
+serra,"previsões somam 1 (markov, h=4)",3.33e-16,True
+serra,"previsões somam 1 (persistencia, h=4)",0.00e+00,True
+serra,"previsões somam 1 (climatologia, h=4)",0.00e+00,True
+serra,P_treino^4: quadrados sucessivos = diagonalização,1.22e-15,True
+serra,"previsões somam 1 (markov, h=8)",3.33e-16,True
+serra,"previsões somam 1 (persistencia, h=8)",0.00e+00,True
+serra,"previsões somam 1 (climatologia, h=8)",0.00e+00,True
+serra,P_treino^8: quadrados sucessivos = diagonalização,1.39e-15,True
+vila_velha,nenhuma transição de treino toca 2023 ou depois,última semana usada: 2022-12-25,True
+vila_velha,"previsões somam 1 (markov, h=1)",0.00e+00,True
+vila_velha,"previsões somam 1 (persistencia, h=1)",0.00e+00,True
+vila_velha,"previsões somam 1 (climatologia, h=1)",0.00e+00,True
+vila_velha,P_treino^1: quadrados sucessivos = diagonalização,4.44e-16,True
+vila_velha,"previsões somam 1 (markov, h=4)",1.11e-16,True
+vila_velha,"previsões somam 1 (persistencia, h=4)",0.00e+00,True
+vila_velha,"previsões somam 1 (climatologia, h=4)",0.00e+00,True
+vila_velha,P_treino^4: quadrados sucessivos = diagonalização,8.60e-16,True
+vila_velha,"previsões somam 1 (markov, h=8)",2.22e-16,True
+vila_velha,"previsões somam 1 (persistencia, h=8)",0.00e+00,True
+vila_velha,"previsões somam 1 (climatologia, h=8)",0.00e+00,True
+vila_velha,P_treino^8: quadrados sucessivos = diagonalização,8.88e-16,True

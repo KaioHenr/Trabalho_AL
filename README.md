@@ -31,7 +31,7 @@ pytest                 # testes (Tabela 1 do enunciado e propriedades)
 python run_all.py      # regenera todos os resultados a partir de data/raw/, sem internet
 ```
 
-Tempo aproximado de execução de `run_all.py`: cerca de 12 s com as Etapas 1 a 5.
+Tempo aproximado de execução de `run_all.py`: cerca de 14 s com as Etapas 1 a 7.
 
 ## Organização
 
@@ -67,6 +67,11 @@ relatorio/       fonte e PDF do relatório
 | Durações no nível 4 × geométrica (E5) | `results/figuras/e5_duracoes_nivel4.png`, `results/tabelas/e5_duracoes_nivel4.csv` | `src/etapa5.py` |
 | Matriz M de primeira passagem (E5) | `results/tabelas/e5_M_*.csv` | `src/etapa5.py` |
 | Primeira passagem empírica 1→4 e 4→1 (E5) | `results/tabelas/e5_primeira_passagem.csv` | `src/etapa5.py` |
+| Tempo até o primeiro vermelho, N (E6) | `results/tabelas/e6_tempo_ate_vermelho.csv`, `e6_N_abs4_*.csv` | `src/etapa6.py` |
+| B e episódios empíricos com IC 95% (E6) | `results/tabelas/e6_B_absorcao.csv`, `e6_episodios_empiricos.csv` | `src/etapa6.py` |
+| Convergência da série de Neumann (E6) | `results/figuras/e6_neumann.png`, `results/tabelas/e6_neumann.csv` | `src/etapa6.py` |
+| Pontuações de Brier e log por horizonte (E7) | `results/tabelas/e7_pontuacoes.csv` | `src/etapa7.py` |
+| Previsão de nível 4 em 2024, h = 4 (E7) | `results/figuras/e7_previsao_2024.png`, `results/tabelas/e7_previsao_h4_*.csv` | `src/etapa7.py` |
 
 ## Uso de IA
 

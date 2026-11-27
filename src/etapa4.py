@@ -80,7 +80,7 @@ def main():
     if not v["ok"].all():
         raise AssertionError(f"Etapa 4: verificação falhou\n{v[~v['ok']]}")
     grafico_convergencia(curvas)
-    print(f"  espectro, meia-vida, P̂^52 e convergência; {len(v)} verificações ok")
+    print(f"  espectro, meia-vida, P^52 e convergência; {len(v)} verificações ok")
 
 
 def grafico_convergencia(curvas):

@@ -157,7 +157,7 @@ def main():
     if not v["ok"].all():
         raise AssertionError(f"Etapa 2: verificação falhou\n{v[~v['ok']]}")
     mapa_calor(Ps, PASTA_FIGURAS / "e2_mapas_P.png")
-    print(f"  C, P̂, erros-padrão e Laplace salvos; {len(v)} verificações ok")
+    print(f"  C, P estimada, erros-padrão e Laplace salvos; {len(v)} verificações ok")
 
 
 if __name__ == "__main__":

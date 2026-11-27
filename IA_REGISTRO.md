@@ -129,3 +129,28 @@ Em cada entrada, **Pedido** resume a solicitação em linguagem formal, e **Prom
 **Aceito / modificado / rejeitado:** *a preencher pelo aluno após revisão.*
 
 **Como foi verificado:** `python run_all.py` sem erros (≈ 12 s); `e3_verificacoes.csv` e `e4_verificacoes.csv` com 12 de 12 ok cada; `pytest` com 33 testes passando; resultados das Etapas 1 e 2 idênticos aos da execução anterior.
+
+---
+
+## 6. Conferência do repositório, correção de codificação e Etapa 5 (26/11/2026)
+
+| Campo | Registro |
+|---|---|
+| **Finalidade** | Revisão, depuração e código |
+| **Etapa** | Reprodutibilidade (Seção 12) e Etapa 5 (permanência e primeira passagem) |
+
+**Pedido:** conferir se o repositório estava correto e preparar a etapa seguinte (Etapa 5), deixando-a commitada para revisão do aluno.
+
+**Prompt original:**
+> confirme se esta tudo certo, e prepare para mim a seguinte
+
+**O que foi produzido:**
+- Conferência: clone limpo do GitHub numa pasta temporária, com `pytest` e `run_all.py`. Encontrado um erro: `run_all.py` falhava em terminais Windows sem UTF-8 por causa do caractere "P̂" nas mensagens. Corrigido em `src/etapa2.py`, `src/etapa4.py` e `run_all.py`.
+- `src/etapa5.py`: blocos e corridas com censura, permanência (modelo e observada, média, mediana, desvio-padrão), histograma do nível 4 contra a geométrica, M por 4 sistemas 3×3 e por Z, Kac, primeira passagem empírica 1→4 e 4→1.
+- `tests/test_etapa5.py`: 5 testes (censura, lacuna, primeira passagem em série feita à mão, Tabela 1 e Kac).
+- `relatorio/notas/etapa5.md`.
+- Dois commits locais, feitos pela IA a pedido do aluno.
+
+**Aceito / modificado / rejeitado:** *a preencher pelo aluno após revisão.*
+
+**Como foi verificado:** no clone limpo, os hashes conferem, os testes passam e os resultados regenerados são idênticos aos do repositório (nenhum arquivo de `results/` alterado); `e5_verificacoes.csv` com 6 de 6 ok; `pytest` com 38 testes passando.

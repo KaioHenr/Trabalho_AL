@@ -1,0 +1,7 @@
+serie,verificacao,valor,ok
+serra,Kac: m_jj = 1/pi_j (tol 1e-10),1.60e-14,True
+serra,M por 4 sistemas 3x3 = M pela matriz fundamental Z (tol 1e-10),8.53e-14,True
+vila_velha,Kac: m_jj = 1/pi_j (tol 1e-10),1.78e-15,True
+vila_velha,M por 4 sistemas 3x3 = M pela matriz fundamental Z (tol 1e-10),2.84e-14,True
+es,Kac: m_jj = 1/pi_j (tol 1e-10),2.84e-14,True
+es,M por 4 sistemas 3x3 = M pela matriz fundamental Z (tol 1e-10),1.71e-13,True

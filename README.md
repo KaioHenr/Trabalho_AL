@@ -31,7 +31,7 @@ pytest                 # testes (Tabela 1 do enunciado e propriedades)
 python run_all.py      # regenera todos os resultados a partir de data/raw/, sem internet
 ```
 
-Tempo aproximado de execução de `run_all.py`: cerca de 12 s com as Etapas 1 a 4.
+Tempo aproximado de execução de `run_all.py`: cerca de 12 s com as Etapas 1 a 5.
 
 ## Organização
 
@@ -63,6 +63,10 @@ relatorio/       fonte e PDF do relatório
 | Espectro, meia-vida, κ₁(V) (E4) | `results/tabelas/e4_espectro.csv`, `e4_resumo.csv` | `src/etapa4.py` |
 | P̂⁵² (E4) | `results/tabelas/e4_P52_*.csv` | `src/etapa4.py` |
 | Convergência para π, escala log (E4) | `results/figuras/e4_convergencia.png`, `results/tabelas/e4_convergencia_*.csv` | `src/etapa4.py` |
+| Permanência modelo × observada (E5) | `results/tabelas/e5_permanencia.csv` | `src/etapa5.py` |
+| Durações no nível 4 × geométrica (E5) | `results/figuras/e5_duracoes_nivel4.png`, `results/tabelas/e5_duracoes_nivel4.csv` | `src/etapa5.py` |
+| Matriz M de primeira passagem (E5) | `results/tabelas/e5_M_*.csv` | `src/etapa5.py` |
+| Primeira passagem empírica 1→4 e 4→1 (E5) | `results/tabelas/e5_primeira_passagem.csv` | `src/etapa5.py` |
 
 ## Uso de IA
 
